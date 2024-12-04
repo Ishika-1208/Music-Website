@@ -7,14 +7,17 @@ import {
      Route,
      Routes,
   } from "react-router-dom";
-  
+
+import Homepage from './Components/Homepage'
+ import React from "react";
 
 function App() {
   return (
     <Router>
     <Routes>
-          <Route path="/login"  element={<Login/>}/>
-          <Route path="/signup"  element={<Signup />}/>
+          <Route path="" element={<Homepage/>}/>
+          <Route path="/signup"  element={<Signup/>}/>
+          <Route path="/login"  element={<Login />}/>
           <Route path="/ForgotPs2" element={<ForgotPs2/>}/>
         </Routes>
     </Router>

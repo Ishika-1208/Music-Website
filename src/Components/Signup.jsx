@@ -1,34 +1,105 @@
-import React from 'react'
-import './Signup.css'
+
+import React, { useState } from "react";
+import '../Styles/Signup.css';
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-  return (
-<div className="container">
-<form>
-  <h1>Sign Up</h1>
-  <h5>Echo the Beat, Feel the Vibe!</h5>
-  <div className="mb-2">
-    <input type="text" className="form-control2" placeholder='First Name'/>
-    <input type="text" className="form-control2" placeholder='Second Name'/>
-  </div>
-  <div className="mb-3">
-    <input type="email" className="form-control3" aria-describedby="emailHelp" placeholder='Enter Your Email Address'/>
-  </div>
-   <div className="mb-3">
-   <input type="password" className="form-control3" placeholder='Enter Your Password'/>
-   </div>
-   <div className="mb-3">
-   <input type="password" className="form-control3" placeholder='Confirm Password'/>
-   </div>
-  <button type="submit" className="btn-primary">Register</button>
-  <p className='account-exist'>Already have an account? <Link to="/login" className="login">Login</Link></p>
-  <p className='signup-with'>or signup with</p>
-  <p className='footer'>This site is protected by reCAPTCHA and </p>
- <p className='footer'> privacy policy and terms of use apply.</p>
-</form>
-    </div>
-  )
-}
+  const [firstName, setFirstName] = useState('');
+  const [userEmail, setUserEmail] = useState('');
+  const [userPassword, setUserPassword] = useState('');
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
-export default Signup
+  const fetchData = (event) => {
+    event.preventDefault();
+
+    setLoading(true);
+    setError(null);
+
+    fetch("https://task-4-0pfy.onrender.com/user/signup", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        name: firstName,
+        email: userEmail,
+        password: userPassword,
+      }),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+        console.log(data)
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+      });
+  };
+
+  return (
+    <div className="container">
+      <form onSubmit={fetchData}>
+        <h1>Sign Up</h1>
+        <h5>Echo the Beat, Feel the Vibe!</h5>
+
+        <div className="mb-2">
+          <input
+            type="text"
+            className="form-control2"
+            placeholder="First Name"
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+          />
+        </div>
+
+        <div className="mb-3">
+          <input
+            type="email"
+            className="form-control3"
+            placeholder="Enter Your Email Address"
+            value={userEmail}
+            onChange={(e) => setUserEmail(e.target.value)}
+          />
+        </div>
+
+        <div className="mb-3">
+          <input
+            type="password"
+            className="form-control3"
+            placeholder="Enter Your Password"
+            value={userPassword}
+            onChange={(e) => setUserPassword(e.target.value)}
+          />
+        </div>
+
+        <button type="submit" className="btn-primary" disabled={loading}>
+          {loading ? "Registering..." : "Register"}
+        </button>
+         
+        {data && <p className="success-message">Register successful! Login, {data.name}.</p>}
+
+        {error && <p className="error">{error}</p>}
+
+        <p className="account-exist">
+          Already have an account? <Link to="/login" className="login">Login</Link>
+        </p>
+
+        <p className="footer">
+          This site is protected by reCAPTCHA and
+        </p>
+        <p className="footer">
+          privacy policy and terms of use apply.
+        </p>
+      </form>
+    </div>
+  );
+};
+
+export default Signup;

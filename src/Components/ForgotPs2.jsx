@@ -1,9 +1,10 @@
 import React from 'react'
-import './ForgotPs2.css'
+import '../Styles/ForgotPs2.css'
 import { Link } from "react-router-dom";
 
 const ForgotPs2 = () => {
   return (
+    <>
     <div className="container">
     <form>
     <h2>Forgot Password</h2>
@@ -16,6 +17,7 @@ const ForgotPs2 = () => {
   <p className='account-exist'>Remember password?<Link to="/login" className="login">Login </Link></p>
 </form>
 </div>
+</>
   )
 }
 

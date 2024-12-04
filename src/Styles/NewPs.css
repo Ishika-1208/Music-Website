@@ -1,32 +1,23 @@
-body {
-    background-image:url(Background.png);
-    background-size: auto;
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-  }
 
   .container {
     background-color: #14112F;
     padding: 20px;
     border-radius: 20px;
     width: 400px;
-    height: 520px;
+    height: 488px;
     margin-top: 120px;
   }
 
   h2 {
     font-weight:bold;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     color: #F39F5A;
-    font-size: 36px;
+    font-size: 26px;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
 
+  
   .heading {
     text-align: center;
     color: white;
@@ -45,6 +36,7 @@ body {
     font-size: 16px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-top: 0px;
+    margin-bottom: 50px;
   }
 
   .btn-primary {
@@ -58,6 +50,7 @@ body {
     cursor: pointer; 
     font-weight: bold;
     text-align: center;
+    margin-top: 30px;
   }
 
   .form-control{
@@ -74,19 +67,4 @@ body {
 
   .form-control::placeholder {
     color: #C0C0C0;
-  }
-
-  .account-exist{
-    text-align: center;
-    color: white;
-    font-size: 16px;
-    font-weight: 500;
-    margin-top: 10px;
-  }
-  
-  .login{
-    text-decoration: none;
-    color: #F39F5A;
-    font-size: 16px;
-    font-weight: bold;
   }
