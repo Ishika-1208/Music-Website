@@ -4,9 +4,9 @@ import '../Styles/Signup.css';
 import { Link } from "react-router-dom";
 
 const Signup = () => {
-  const [firstName, setFirstName] = useState('');
-  const [userEmail, setUserEmail] = useState('');
-  const [userPassword, setUserPassword] = useState('');
+  const [name, setname] = useState('');
+  const [email, setemail] = useState('');
+  const [password, setpassword] = useState('');
   const [data, setData] = useState(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -21,9 +21,9 @@ const Signup = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
-        name: firstName,
-        email: userEmail,
-        password: userPassword,
+        name: name,
+        email: email,
+        password: password,
       }),
     })
       .then((response) => {
@@ -52,10 +52,10 @@ const Signup = () => {
         <div className="mb-2">
           <input
             type="text"
-            className="form-control2"
+            className="form-control3"
             placeholder="First Name"
-            value={firstName}
-            onChange={(e) => setFirstName(e.target.value)}
+            value={name}
+            onChange={(e) => setname(e.target.value)}
           />
         </div>
 
@@ -64,8 +64,8 @@ const Signup = () => {
             type="email"
             className="form-control3"
             placeholder="Enter Your Email Address"
-            value={userEmail}
-            onChange={(e) => setUserEmail(e.target.value)}
+            value={email}
+            onChange={(e) => setemail(e.target.value)}
           />
         </div>
 
@@ -74,8 +74,8 @@ const Signup = () => {
             type="password"
             className="form-control3"
             placeholder="Enter Your Password"
-            value={userPassword}
-            onChange={(e) => setUserPassword(e.target.value)}
+            value={password}
+            onChange={(e) => setpassword(e.target.value)}
           />
         </div>
 

@@ -1,0 +1,25 @@
+.footer2 {
+    font-size: 14px;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    margin: 0px;
+    font-family:  "Roboto", sans-serif;
+}
+
+.remember-ps {
+ text-align: center;
+  color: white;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 10px;
+  font-family:  "Roboto", sans-serif;
+}
+
+.login{
+    text-decoration: none;
+    color: #F39F5A;
+    font-size: 16px;
+    font-weight: bold;
+    font-family:  "Roboto", sans-serif;
+  }

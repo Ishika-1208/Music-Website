@@ -1,0 +1,28 @@
+.Successmarklogo {
+   height: 100px;
+   margin: 20px 120px 20px 120px; 
+   width: 100px;
+}
+
+  .ps-changed {
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    font-size: 26px;
+    color: white;
+    text-align: center;
+  }
+
+  .heading1 {
+    font-weight: 500;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    color: #8391A1;
+    text-align: center;
+  }
+
+  .login-button {
+    text-decoration: none;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+  }
