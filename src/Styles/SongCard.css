@@ -1,0 +1,31 @@
+.song-card {
+    width: 150px;
+    text-align: center;
+    background-color: #292943;
+    border-radius: 8px;
+    padding: 15px;
+    transition: transform 0.2s;
+  }
+  
+  .song-card img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .song-card h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .song-card p {
+    font-size: 14px;
+    color: #ff914d;
+  }
+  
+  .song-card:hover {
+    transform: scale(1.05);
+  }
+  

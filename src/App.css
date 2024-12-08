@@ -1,0 +1,12 @@
+.app {
+    display: flex;
+    background-color: #1e1e2e;
+    color: white;
+    height: 100vh;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  

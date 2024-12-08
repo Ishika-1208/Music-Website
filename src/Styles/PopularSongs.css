@@ -1,0 +1,15 @@
+.popular-songs {
+    margin-top: 20px;
+  }
+  
+  .popular-songs h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  .song-list {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  

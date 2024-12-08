@@ -1,0 +1,70 @@
+.header {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* .header input {
+    width: 50%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px; 
+  } */
+  
+  .btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    background-color: #ff914d;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn:hover {
+    background-color: #ff7235;
+  }
+  
+  .login-btn {
+    background-color: #25254b;
+    color: #ff914d;
+  }
+  
+  .login-btn:hover {
+    color: white;
+    border: 1px solid #ff914d;
+  }
+
+  .searchbar {
+    width: 400px;
+    height: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-left-radius:50px ;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 10px 15px;
+    margin-left: 500px;
+    background-color: #0E0D1D;
+    color: white;
+    border: none;
+    font-size: 16px;
+  }
+
+  .searchbar::after {
+    border: none;
+  }
+
+  .btn-outline-success {
+    background-color: #0E0D1D;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius:0 ;
+    height: 50px;
+    margin-left: 0;
+ }
+ 

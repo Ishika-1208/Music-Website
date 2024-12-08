@@ -1,0 +1,25 @@
+.album-slider {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    overflow-x: auto;
+  }
+  
+  .album-card {
+    flex: 0 0 auto;
+    width: 150px;
+    height: 150px;
+    background-color: #292943;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .album-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    object-fit: cover;
+  }
+  
