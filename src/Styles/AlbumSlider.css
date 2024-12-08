@@ -3,6 +3,9 @@
     gap: 15px;
     margin-bottom: 30px;
     overflow-x: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-left: 340px;
+    padding: 20px;
   }
   
   .album-card {

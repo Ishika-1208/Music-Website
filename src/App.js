@@ -13,16 +13,16 @@ import {
 import Homepage from './Components/Homepage'
  import React from "react";
 
- import Sidebar from "./Components/Sidebar";
-import Header from "./Components/Header";
-import AlbumSlider from "./Components/AlbumSlider";
-import PopularSongs from "./Components/PopularSongs";
+//  import Sidebar from "./Components/Sidebar";
+// import Header from "./Components/Header";
+// import AlbumSlider from "./Components/AlbumSlider";
+// import PopularSongs from "./Components/PopularSongs";
 
 function App() {
   return (
     <>
     <Router>
-
+{/* 
     <div className="app">
       <Sidebar />
       <div className="main-content">
@@ -30,7 +30,7 @@ function App() {
         <AlbumSlider />
         <PopularSongs />
       </div>
-    </div>
+    </div> */}
 
 
     <Routes>

@@ -1,6 +1,5 @@
 .header {
     display: flex;
-    /* justify-content: space-between; */
     align-items: center;
     margin-bottom: 20px;
   }
@@ -13,29 +12,35 @@
     font-size: 16px; 
   } */
   
-  .btn {
-    padding: 10px 20px;
-    margin-left: 10px;
-    background-color: #ff914d;
-    color: white;
+  .signup-btn {
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background: none;
     border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 16px;
+    color:black;
+    width: 100px;
+    margin-left: 300px;
   }
   
-  .btn:hover {
-    background-color: #ff7235;
+  .signup-btn:hover {
+    background-color: #F39F5A;
   }
   
   .login-btn {
-    background-color: #25254b;
-    color: #ff914d;
+    height: 45px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 30px;
+    background: none;
+    border: none;
+    color: black;
+    width: 100px;
   }
   
   .login-btn:hover {
-    color: white;
-    border: 1px solid #ff914d;
+    background-color: #F39F5A;
   }
 
   .searchbar {
@@ -53,10 +58,6 @@
     font-size: 16px;
   }
 
-  .searchbar::after {
-    border: none;
-  }
-
   .btn-outline-success {
     background-color: #0E0D1D;
     border: none;
@@ -67,4 +68,49 @@
     height: 50px;
     margin-left: 0;
  }
- 
+/* 
+ .latest-songs {
+  margin-top: 40px;
+}
+
+.latest-songs h2 {
+  margin-bottom: 20px;
+}
+
+.results-list {
+  list-style: none;
+  padding: 0;
+}
+
+.result-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.result-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.result-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.result-title {
+  font-weight: bold;
+}
+
+.result-artist, .result-duration {
+  font-size: 0.9em;
+  color: #555;
+}
+
+
+  */

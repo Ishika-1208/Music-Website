@@ -1,7 +1,8 @@
-body {
+ body {
     background-color: #14112f;
-   
 }
+
+/*
 .d-flex {
     display: flex;
     justify-content: space-between;
@@ -207,4 +208,4 @@ li:hover {
     height: 1046px;
     width: 930px;
     background-color:rgba(0, 0, 0, 0.3);
-}
+} */

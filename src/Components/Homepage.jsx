@@ -1,5 +1,5 @@
 // import React from 'react'
-// import '../Styles/Homepage.css'
+import '../Styles/Homepage.css'
 // // import Search from '../Images/Search.png'
 // // import Group from '../Images/Group.png'
 // // import Group15 from '../Images/Group15.png'
@@ -122,9 +122,9 @@ import PopularSongs from "./PopularSongs";
 const Home = () => {
   return (
     <div className="home">
-      <Sidebar />
+      <Header />
       <div className="main-content">
-        <Header />
+        <Sidebar />
         <AlbumSlider />
         <PopularSongs />
       </div>
