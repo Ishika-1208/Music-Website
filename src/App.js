@@ -22,17 +22,6 @@ function App() {
   return (
     <>
     <Router>
-{/* 
-    <div className="app">
-      <Sidebar />
-      <div className="main-content">
-        <Header />
-        <AlbumSlider />
-        <PopularSongs />
-      </div>
-    </div> */}
-
-
     <Routes>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/NewPs" element={<NewPs/>}/>
