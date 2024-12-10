@@ -44,6 +44,7 @@ const Signup = () => {
   };
 
   return (
+    <div className="Signup-Page">
     <div className="container">
       <form onSubmit={fetchData}>
         <h1>Sign Up</h1>
@@ -98,6 +99,7 @@ const Signup = () => {
           privacy policy and terms of use apply.
         </p>
       </form>
+    </div>
     </div>
   );
 };

@@ -16,7 +16,7 @@ const ForgotPs2 = () => {
     setError('');
 
     try {
-      const response = await fetch('https://task-4-0pfy.onrender.com/requestPasswordReset', {
+      const response = await fetch('https://task-4-0pfy.onrender.com/user/requestPasswordReset', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

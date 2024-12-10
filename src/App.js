@@ -12,6 +12,8 @@ import {
 // import backgroundfinal from '../Images/backgroundfinal.jpeg'
 import Homepage from './Components/Homepage'
  import React from "react";
+import UserProfile from './Components/UserProfile';
+import Songscreen from './Components/Songscreen';
 
 //  import Sidebar from "./Components/Sidebar";
 // import Header from "./Components/Header";
@@ -23,6 +25,8 @@ function App() {
     <>
     <Router>
     <Routes>
+          <Route path="/UserProfile" element={<UserProfile/>}/>
+          <Route path="/Songscreen" element={<Songscreen/>}/>
           <Route path="/" element={<Homepage/>}/>
           <Route path="/NewPs" element={<NewPs/>}/>
           <Route path="/signup"  element={<Signup/>}/>

@@ -333,13 +333,16 @@ import { Link } from "react-router-dom";
 import axios from "axios";
 import logo from "../Images/logo.png";
 
-const Header = () => {
-  const [query, setQuery] = useState("");
-  const [searchResults, setSearchResults] = useState([]);
-  const [loading, setLoading] = useState(false);
-  const [error, setError] = useState(null);
+const SearchSongs = () => {
+  const [query, setQuery] = useState(""); // Search query state
+  const [searchResults, setSearchResults] = useState([]); // Search results state
+  const [loading, setLoading] = useState(false); // Loading state
+  const [error, setError] = useState(null); // Error state
 
   const handleSearch = async () => {
+    console.log("Searching...");
+
+    // Validate the input query
     if (!query.trim()) {
       alert("Please enter a search term.");
       return;
@@ -349,9 +352,14 @@ const Header = () => {
     setError(null);
 
     try {
+      // Send a GET request to the API with the search query as a parameter
       const response = await axios.get("https://task-4-0pfy.onrender.com/songs/search", {
         params: { query },
       });
+      console.log(response.data);
+      
+      console.log(response.data.results);
+      
       setSearchResults(response.data.results || []);
     } catch (err) {
       console.error("Error fetching search results:", err.message);
@@ -406,6 +414,6 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default SearchSongs;
 
 

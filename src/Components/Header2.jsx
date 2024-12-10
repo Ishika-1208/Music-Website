@@ -1,9 +1,11 @@
+
 import React, { useState } from "react";
-import "../Styles/Header.css";
+// import "../Styles/Header2.css";
 import Search from "../Images/Search.png";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import logo from "../Images/logo.png";
+import person from "../Images/person.png";
 
 const Header2 = () => {
   const [query, setQuery] = useState("");
@@ -49,11 +51,9 @@ const Header2 = () => {
         </button>
       </div>
 
-
-      <Link to="/Userdetails">
-        <img src="" alt="" />
+      <Link to="/UserProfile">
+        <img src={person} alt="User" />
       </Link>
-
 
       <div className="search-results">
         {loading && <p>Loading...</p>}
@@ -80,3 +80,5 @@ const Header2 = () => {
 };
 
 export default Header2;
+
+

@@ -99,7 +99,7 @@ const Login = () => {
     setError(null);
 
     try {
-      const response = await fetch("https://task-4-0pfy.onrender.com/login", {
+      const response = await fetch("https://task-4-0pfy.onrender.com/user/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),
@@ -115,7 +115,7 @@ const Login = () => {
       localStorage.setItem("token", data.token);
 
       // Redirect user to the dashboard or homepage
-      navigate("/homepage");
+      navigate("/Homepage");
 
     } catch (err) {
       setError(err.message);

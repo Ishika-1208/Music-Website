@@ -33,7 +33,7 @@ const Sidebar = () => {
     <div className="sidebar">
       <ul>
         <li>
-          <Link to="/" className="menu-item">
+          <Link to="" className="menu-item">
             <img className="icons-display" src={Group} alt="home" />
             Home
           </Link>
