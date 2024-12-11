@@ -1,35 +1,17 @@
-/* .popular-songs {
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    margin-left: 340px;
-    padding: 20px;
-  }
-  
-  .popular-songs h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-  }
-  
-  .song-list {
-    display: flex;
-    gap: 15px;
-    flex-wrap: wrap;
-  }
-   */
-
-
 
    .popular-songs {
-    margin-top: 20px;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
     margin-left: 340px;
     padding: 20px;
     transition: all 0.3s ease; 
+    border-radius: 10px;
   }
   
   .popular-songs h2 {
-    font-size: 24px;
+    font-size: 48px;
     margin-bottom: 15px;
+    font-weight: 700;
+    color: white;
   }
   
   .song-list {

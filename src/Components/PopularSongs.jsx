@@ -406,7 +406,7 @@ const PopularSongs = () => {
             <SongCard
               key={song._id}
               song={song}
-              onClick={() => handleSongClick(song.url)} // Play song on click
+              onClick={() => handleSongClick(song.url)} 
             />
           ))
         ) : (

@@ -84,6 +84,7 @@ li {
 
 .menu-item:hover {
   background-color: #f39f5a;
+  padding-left: 50px;
 }
 
 .icons-display {
