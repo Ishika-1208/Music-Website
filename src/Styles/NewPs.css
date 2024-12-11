@@ -1,11 +1,21 @@
 
+.NewPs-Page {
+  background-image: url(../Images/Raag.png);
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
   .container {
     background-color: #14112F;
     padding: 20px;
     border-radius: 20px;
     width: 400px;
     height: 488px;
-    margin-top: 200px;
   }
 
   h2 {

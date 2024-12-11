@@ -14,8 +14,8 @@ import Homepage from './Components/Homepage'
  import React from "react";
 import UserProfile from './Components/UserProfile';
 import Songscreen from './Components/Songscreen';
+import PsChanged from "./Components/PsChanged";
 
-//  import Sidebar from "./Components/Sidebar";
 // import Header from "./Components/Header";
 // import AlbumSlider from "./Components/AlbumSlider";
 // import PopularSongs from "./Components/PopularSongs";
@@ -28,6 +28,7 @@ function App() {
           <Route path="/UserProfile" element={<UserProfile/>}/>
           <Route path="/Songscreen" element={<Songscreen/>}/>
           <Route path="/" element={<Homepage/>}/>
+          <Route path="/PsChanged" element={<PsChanged/>}/>
           <Route path="/NewPs" element={<NewPs/>}/>
           <Route path="/signup"  element={<Signup/>}/>
           <Route path="/login"  element={<Login />}/>

@@ -39,14 +39,14 @@ const ForgotPs2 = () => {
   };
 
   return (
-    <>
+    <div className="ForgotPs2-Page">
     <div className="container">
     <form  onSubmit={handleSubmit}>
     <h1>Forgot Password</h1>
     <p className='heading'>Please enter the  email address linked</p>
     <p className='heading2'>with your account</p>
   <div className="mb-3">
-    <input type="email" className="form-control" aria-describedby="emailHelp" placeholder='Enter your email  or username' value={email}
+    <input type="email" className="form-control" placeholder='Enter your email  or username' value={email}
             onChange={(e) => setEmail(e.target.value)}
             required/>
   </div>
@@ -58,7 +58,7 @@ const ForgotPs2 = () => {
   <p className='account-exist'>Remember password?<Link to="/login" className="login">Login </Link></p>
 </form>
 </div>
-</>
+</div>
   )
 }
 
