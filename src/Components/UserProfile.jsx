@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from "./Sidebar";
 import Header2 from "./Header2";
-import UserDetails from "../Components/UserDetails";
+import UserDetails from "../Components/UserDetails.jsx";
 // import UserDetails from "./SubFolder/UserDetails";
 
 import "../Styles/UserProfile.css";
